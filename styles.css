@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: "Vazirmatn RD", sans-serif;
+    font-size: 1rem;
+    direction: rtl;
+    background-color: #18191A;
+    color: #E4E6EB;
+}
+header,main {
+  background: #242526;
+  width: 90%;
+  margin: 0.8rem auto;
+}
+h1 {
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+}
+.radius {
+  border-radius: 4px;
+}
+.bb {
+  background-color: #E5F0FF;
+  color: #0052C9;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+main {
+  direction: ltr;
+}
+main section:first-child, main section div{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+main section:first-child h2 {
+  padding: 1rem;
+  flex: 0 1 auto;
+}
+main section h2 {
+  margin: 1rem;
+  font-size: 5rem;
+}
+input {
+    flex: 1 1 auto;
+    border: none;
+    padding: 1rem 0;
+    max-width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #3A3B3C;
+    color: white;
+    font: 5ch droid sans mono, consolas, monospace;
+}
+button {
+  flex: 1 1 auto;
+  background-color: #0066ff;
+  padding: 1rem;
+  color: white;
+  font: inherit;
+  font-size: 1rem !important;
+  border: none;
+}
+input:focus {
+     outline: none;
+     color: white;
+}
+label {
+  padding: 1rem 0;
+  text-align: center;
+  display: block;
+  color: #E4E6EB;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=number] {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+@font-face {
+  font-family: Vazirmatn RD;
+  src: url('fonts/webfonts/Vazirmatn-RD-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+    font-family: Vazirmatn RD;
+    src: url('fonts/webfonts/Vazirmatn-RD-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('fonts/webfonts/Vazirmatn-RD-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('fonts/webfonts/Vazirmatn-RD-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('fonts/webfonts/Vazirmatn-RD-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('fonts/webfonts/Vazirmatn-RD-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('fonts/webfonts/Vazirmatn-RD-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+/*
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('fonts/webfonts/Vazirmatn-RD-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('fonts/webfonts/Vazirmatn-RD-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  */
