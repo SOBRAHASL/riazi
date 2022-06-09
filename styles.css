@@ -1,78 +1,109 @@
 body {
-    margin: 0;
-    font-family: "Vazirmatn RD", sans-serif;
-    font-size: 1rem;
-    direction: rtl;
-    background-color: #18191A;
-    color: #E4E6EB;
+  margin: 0;
+  font-family: "Vazirmatn RD", sans-serif;
+  font-size: 1rem;
+  direction: rtl;
+  background-color: #18191A;
+  color: white;
 }
-header,main {
+header, main, footer {
   background: #242526;
-  width: 90%;
-  margin: 0.8rem auto;
+  width: 95%;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 1rem auto;
 }
-h1 {
-    text-align: center;
-    margin: 0;
-    font-weight: bold;
-    padding: 0.8rem;
-    font-size: 1.6rem;
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  font-size: 3rem;
 }
 .radius {
   border-radius: 4px;
 }
 .bb {
-  background-color: #E5F0FF;
-  color: #0052C9;
-  padding: 0.4rem;
-  box-sizing: border-box;
+  background-color: #0066ff;
+  color: white;
+  margin: 0.5rem;
+  font-weight: normal;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
+}
+.bb:hover {
+  background-color: #005ce6;
 }
 main {
   direction: ltr;
 }
-main section:first-child, main section div{
+main section:first-child, main section:last-child div{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 main section:first-child h2 {
   padding: 1rem;
+  font-size: 8rem;
+  text-align: center;
   flex: 0 1 auto;
-}
-main section h2 {
-  margin: 1rem;
-  font-size: 5rem;
+  line-height: normal;
+  margin: 0;
 }
 input {
-    flex: 1 1 auto;
-    border: none;
-    padding: 1rem 0;
-    max-width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    background-color: #3A3B3C;
-    color: white;
-    font: 5ch droid sans mono, consolas, monospace;
+  flex: 2 1 auto;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding: 1rem;
+  max-width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #3A3B3C;
+  color: white;
+  font: inherit;
+  font-size: 2rem;
 }
 button {
   flex: 1 1 auto;
   background-color: #0066ff;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: white;
+  border-radius: 0 4px 4px 0;
   font: inherit;
   font-size: 1rem !important;
   border: none;
 }
+button:hover {
+  background-color: #005ce6;
+}
 input:focus {
-     outline: none;
-     color: white;
+  outline: none;
+  color: white;
 }
 label {
   padding: 1rem 0;
   text-align: center;
   display: block;
   color: #E4E6EB;
+}
+footer h3 {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: normal;
+}
+footer h3 span {
+  color: red;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+::selection {
+  background-color: white;
+  color: #18191A;
 }
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=number] {
   -webkit-appearance: none;
@@ -81,71 +112,34 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=n
 }
 @font-face {
   font-family: Vazirmatn RD;
-  src: url('fonts/webfonts/Vazirmatn-RD-Bold.woff2') format('woff2');
-  font-weight: 700;
+  src: url('fonts/Vazirmatn-RD-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-    font-family: Vazirmatn RD;
-    src: url('fonts/webfonts/Vazirmatn-RD-Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: Vazirmatn RD;
+  src: url('fonts/Vazirmatn-RD-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@media screen and (max-width: 560px) {
+  input {
+    border-radius: 4px 4px 0 0;
   }
-  
-  @font-face {
-    font-family: Vazirmatn RD;
-    src: url('fonts/webfonts/Vazirmatn-RD-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
+  button {
+    border-radius: 0 0 4px 4px;
   }
-  
-  @font-face {
-    font-family: Vazirmatn RD;
-    src: url('fonts/webfonts/Vazirmatn-RD-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+}
+@media screen and (max-width: 520px) {
+  section:first-child {
+    flex-flow: column nowrap !important;
   }
-  
-  @font-face {
-    font-family: Vazirmatn RD;
-    src: url('fonts/webfonts/Vazirmatn-RD-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  h2 {
+    line-height: 100% !important;
   }
-  
-  @font-face {
-    font-family: Vazirmatn RD;
-    src: url('fonts/webfonts/Vazirmatn-RD-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  h2:first-child {
+    margin-top: 1rem !important;
   }
-  
-  @font-face {
-    font-family: Vazirmatn RD;
-    src: url('fonts/webfonts/Vazirmatn-RD-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-/*
-  @font-face {
-    font-family: Vazirmatn RD;
-    src: url('fonts/webfonts/Vazirmatn-RD-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Vazirmatn RD;
-    src: url('fonts/webfonts/Vazirmatn-RD-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-  }
-  */
+}

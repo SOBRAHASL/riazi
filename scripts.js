@@ -38,12 +38,12 @@ function check_numbers(array) {
 window.addEventListener("DOMContentLoaded", function() {
     let h2 = document.querySelectorAll("h2");
 
-    spread_numbers(h2, 10);
+    spread_numbers(h2, 20);
 
     document.querySelector("button").addEventListener("click", function() {
         check_numbers(h2);
         document.querySelector("input").value = "";
-        spread_numbers(h2, 10);
+        spread_numbers(h2, 20);
     });
     document.querySelector("input").addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
